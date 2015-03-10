@@ -12,8 +12,11 @@ defmodule Chat.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:logger]]
+    [applications: applications(Mix.env)]
   end
+
+  defp applications(:test), do: applications(:all) ++ [:blacksmith]
+  defp applications(_all),  do: [:logger]
 
   # Dependencies can be Hex packages:
   #
@@ -25,6 +28,7 @@ defmodule Chat.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [{:shouldi, only: :test},
+     {:blacksmith, only: :test}]
   end
 end
