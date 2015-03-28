@@ -341,7 +341,7 @@ do blocks
 default args
 
 iex> defmodule Secret do           
-...(4)>   def hanger(x // 18), do: x
+...(4)>   def hanger(x \\ 18), do: x
 ...(4)> end                         
 iex:4: redefining module Secret
 {:module, Secret,
@@ -431,7 +431,7 @@ IO.inspect QuickSort.sort([5, 6, 3, 2, 7, 8])
 
 default trailing options
 
-def draw(square, options // [])
+def draw(square, options \\ [])
 
 e.g. 
-draw :square, 2, line_width: 20
+draw :square, line_width: 20
