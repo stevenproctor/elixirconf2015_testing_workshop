@@ -52,4 +52,8 @@ Implement a chat: https://github.com/ericmj/workshop/tree/lab2
 
 Using ShouldI: https://github.com/ericmj/workshop/tree/lab3
 
-Using Blacksmith: https://github.com/ericmj/workshop/tree/lab4
+Processes: https://github.com/ericmj/workshop/tree/lab4
+
+Process abstractions: https://github.com/ericmj/workshop/tree/lab5
+
+Using Blacksmith: https://github.com/ericmj/workshop/tree/lab6
