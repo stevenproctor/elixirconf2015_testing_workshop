@@ -13,7 +13,6 @@ defmodule Lab1 do
   end
 
   def num_atoms(list) do
-    list
-      |> Enum.count &is_atom/1
+    Enum.count list, &is_atom/1
   end
 end
